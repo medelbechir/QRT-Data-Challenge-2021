@@ -16,12 +16,9 @@ For each observation identified by a trading day (`ID_DAY`) and a target liquid
 asset (`ID_TARGET`), the task is to predict the sign of the next-day return
 `RET_TARGET` using returns from 100 illiquid assets (`RET_*`).
 
-The official evaluation metric is the **magnitude-weighted directional accuracy**:
+The official evaluation metric is the magnitude-weighted directional accuracy:
 
-Score =
-sum_i |y_i| · 1[sign(ŷ_i) = sign(y_i)]
-------------------------------------
-          sum_i |y_i|
+Score = ( Σ |y_i| · 1[sign(ŷ_i) = sign(y_i)] ) / Σ |y_i|
 
 ---
 
@@ -95,16 +92,20 @@ overview.
 
 ## Repository structure
 
+```text
 QRT-Data-Challenge-2021/
+│
 ├── README.md
 ├── QRT_Challenge.ipynb
 ├── QRT_Challenge.html
+│
 ├── data/
 │   ├── data.zip
 │   ├── README.md
 │   └── supplementary_data/
 │       ├── supplementary_data.csv
 │       └── Benchmark_2021_QRT_Challenge.ipynb
+│
 └── Overview_of_my_solution.pdf
 
 ---
