@@ -7,7 +7,7 @@ The objective is to predict the sign of a liquid asset return using 100 illiquid
 ## Highlights
 - **ENS Challenge Data – QRT Data Challenge 2021:**  
   3rd place on the public leaderboard at the time of submission  
-  ([official challenge page](https://challengedata.ens.fr/participants/challenges/44/))
+  ([official challenge page](https://challengedata.ens.fr/challenges/44))
 - **Day-wise cross-validation:** GroupKFold split by `ID_DAY`
 - **Target-specific training:** one model per `ID_TARGET`
 - **Ensemble model:** Ridge + XGBoost + ExtraTrees
